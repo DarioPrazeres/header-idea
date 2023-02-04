@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="vie wport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Header</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <img src="./img/background.png" alt="" class="banner">
+        <a href="#" class="logo">Brand</a>
+        <div class="toggle"></div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>The New Goals is Coming soon</h2>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor perferendis laudantium voluptate deserunt, numquam odit ducimus asperiores atque, corporis eaque aspernatur cum, enim repudiandae aliquid dolorum illo voluptatibus? Tenetur, laudantium.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor perferendis laudantium voluptate deserunt, numquam odit ducimus asperiores atque, corporis eaque aspernatur cum, enim repudiandae aliquid dolorum illo voluptatibus? Tenetur, laudantium.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor perferendis laudantium voluptate deserunt, numquam odit ducimus asperiores atque, corporis eaque aspernatur cum, enim repudiandae aliquid dolorum illo voluptatibus? Tenetur, laudantium.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor perferendis laudantium voluptate deserunt, numquam odit ducimus asperiores atque, corporis eaque aspernatur cum, enim repudiandae aliquid dolorum illo voluptatibus? Tenetur, laudantium.
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor perferendis laudantium voluptate deserunt, numquam odit ducimus asperiores atque, corporis eaque aspernatur cum, enim repudiandae aliquid dolorum illo voluptatibus? Tenetur, laudantium.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor perferendis laudantium voluptate deserunt, numquam odit ducimus asperiores atque, corporis eaque aspernatur cum, enim repudiandae aliquid dolorum illo voluptatibus? Tenetur, laudantium.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor perferendis laudantium voluptate deserunt, numquam odit ducimus asperiores atque, corporis eaque aspernatur cum, enim repudiandae aliquid dolorum illo voluptatibus? Tenetur, laudantium.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor perferendis laudantium voluptate deserunt, numquam odit ducimus asperiores atque, corporis eaque aspernatur cum, enim repudiandae aliquid dolorum illo voluptatibus? 
+        </p>
+        <p>
+            Tenetur, laudantium.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor perferendis laudantium voluptate deserunt, numquam odit ducimus asperiores atque, corporis eaque aspernatur cum, enim repudiandae aliquid dolorum illo voluptatibus? Tenetur, laudantium.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor perferendis laudantium voluptate deserunt, numquam odit ducimus asperiores atque, corporis eaque aspernatur cum, enim repudiandae aliquid dolorum illo voluptatibus? Tenetur, laudantium.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor perferendis laudantium voluptate deserunt, numquam odit ducimus asperiores atque, corporis eaque aspernatur cum, enim repudiandae aliquid dolorum illo voluptatibus? Tenetur, laudantium.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor perferendis laudantium voluptate deserunt, numquam odit ducimus asperiores atque, corporis eaque aspernatur cum, enim repudiandae aliquid dolorum illo voluptatibus? Tenetur, laudantium.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor perferendis laudantium voluptate deserunt, numquam odit ducimus asperiores atque, corporis eaque aspernatur cum, enim repudiandae aliquid dolorum illo voluptatibus? Tenetur, laudantium.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor perferendis laudantium voluptate deserunt, numquam odit ducimus asperiores atque, corporis eaque aspernatur cum, enim repudiandae aliquid dolorum illo voluptatibus? 
+        </p>
+        <p>
+            Tenetur, laudantium.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor perferendis laudantium voluptate deserunt, numquam odit ducimus asperiores atque, corporis eaque aspernatur cum, enim repudiandae aliquid dolorum illo voluptatibus? Tenetur, laudantium.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor perferendis laudantium voluptate deserunt, numquam odit ducimus asperiores atque, corporis eaque aspernatur cum, enim repudiandae aliquid dolorum illo voluptatibus? Tenetur, laudantium.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor perferendis laudantium voluptate deserunt, numquam odit ducimus asperiores atque, corporis eaque aspernatur cum, enim repudiandae aliquid dolorum illo voluptatibus? Tenetur, laudantium.
+        </p>
+    </section>
+    <script>
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        })
+        document.querySelector('.toggle').onclick = function(){
+            this.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
